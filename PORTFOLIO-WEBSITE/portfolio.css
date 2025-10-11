@@ -61,6 +61,14 @@ header {
   color: var(--header-text-colour);
 }
 
+.more-icon-container {
+  display: none;
+  max-width: 1.5rem;
+  width: 100%;
+  color: var(--header-text-colour);
+  margin-block-start: 0.2rem;
+}
+
 /* HEADER SECTION */
 .header-section {
   display: grid;
@@ -70,7 +78,7 @@ header {
   max-width: 75rem;
   width: 100%;
   margin-block-start: 3rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
 }
 
 /* .location-final-container {
@@ -109,16 +117,12 @@ header {
 }
 
 .header-first-section h1 {
-  font-size: clamp(1.5rem, 30vw, 7rem);
+  font-size: clamp(2rem, 10vw, 7rem);
   color: var(--header-text-colour);
 }
 
-.header-first-section h1 {
-  font-size: 7rem;
-}
-
 .header-content-body {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   color: var(--header-text-colour);
   margin-block-start: 1.5rem;
 }
@@ -172,11 +176,12 @@ header {
   display: flex;
   /* width: 100%; */
   align-items: center;
+  gap: 1rem;
   padding: 4rem 6rem;
   justify-content: space-between;
   background-color: var(--yellow-highlight);
   border-radius: 2rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
 }
 
 .project-container {
@@ -187,7 +192,7 @@ header {
 .project-header {
   font-weight: bold;
   color: var(--header-text-colour);
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem );
 }
 
 .project-body {
@@ -206,7 +211,7 @@ header {
 .project-section-main {
   display: grid; 
   gap: 2rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
 }
 
 .project-main-header p {
@@ -249,7 +254,7 @@ header {
 .project-header-main {
   font-weight: bold;
   font-family: Lora;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   color: var(--header-text-colour);
 }
 
@@ -258,10 +263,6 @@ header {
   color: var(--body-text-colour);
   line-height: 1.5rem;
 }
-
-/* .button-container {
-  display: grid;
-} */
 
 .read-more-button {
   padding: 0.3rem 0.5rem;
@@ -285,7 +286,7 @@ header {
   /* justify-content: space-between; */
   align-items: start;
   gap: 2rem;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
 }
 
 .services-container,
@@ -354,7 +355,7 @@ header {
 .about-main {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
   gap: 2rem;
 }
 
@@ -397,7 +398,7 @@ header {
 .about-header {
   font-family: Lora;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: clamp(3rem, 4vw, 3rem);
   color: var(--yellow-text-colour);
   margin-block-end: 1rem;
 }
@@ -407,6 +408,170 @@ header {
   color: var(--body-text-shade-one);
   font-weight: 500;
   font-size: 1.5rem;
-  margin-block-end: 1rem;
+  margin-block-end: 1.5rem;
+}
+
+.skills-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills-section-header {
+  color: var(--header-text-colour);
+  font-family: Inter;
+  font-weight: bold;
+}
+
+.product-design-section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-design-first {
+  display: grid;
+  gap: 1rem;
+}
+
+.product-design-container p {
+  color: var(--body-text-shade-one);
+  font-family: Inter;
+}
+
+/* CLIENT FEEDBACK SECTION  */
+.client-feedback-section {
+  display: grid;
+  margin-block-start: 8rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.client-feedback-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 1.5rem;
+  margin-inline: 1rem;
+}
+
+.client-feedacks {
+  padding: 3rem 2rem;
+  border: solid 0.031rem rgb(223, 222, 222);
+  border-radius: 2rem;
+  height: 100%;
+}
+
+.client-feedacks p {
+  font-family: Inter;
+  color: var(--header-text-colour);
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 2rem;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  display: grid;
+  margin-block: 8rem 2rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.contact-section-main {
+  display: grid;
+  gap: 3rem;
+  margin-inline: 1rem;
+}
+
+.lets-connect {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+
+.connect-header {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: clamp(2rem, 16vw, 10rem);
+  color: rgb(205, 202, 202);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.2rem;
+}
+
+.connect-email {
+  font-family: Inter;
+  color: var(--header-text-colour);
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon svg {
+  max-width: 1rem;
+  width: 100%;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width:750px) {
+  .header-container-main {
+    margin-inline: 0;
+  }
+
+  .services-rendered {
+    grid-template-columns: none;
+  }
+
+  .about-main {
+    grid-template-columns: none;
+  }
+
+  .horizontal-image img {
+    max-width: none;
+  }
+
+  .vertical-image-container {
+    flex-direction: column;
+    max-width: none;
+  }
+
+  .product-design-section-container {
+    grid-template-columns: none;
+  }
+
+  .client-feedback-main {
+    grid-template-columns: none;
+    gap: 1.5rem;
+  }
+
+  .project-sections-final {
+    grid-template-columns: none;
+    gap: 1.5rem;
+  }
+
+  .more-icon-container {
+    display: block;
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .middle-section-main {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width:460px) {
+    .middle-section-main {
+      flex-direction: column;
+  }
 }
 
