@@ -5,6 +5,7 @@
   --body-text-colour: rgb(57 57 57);
   --body-text-shade-one: rgb(138 138 138);
   --yellow-highlight: rgb(253 203 110);
+  --yellow-text-colour: rgb(243, 172, 40);
   --yellow-dark-shade: rgb(97, 77, 39);
 }
 
@@ -156,12 +157,16 @@ header {
 /* MIDDLE SECTION */
 .middle-section {
   display: grid;
-  /* justify-items: center; */
   max-width: 75rem;
   width: 100%;
   margin-block-start: 8rem;
-  margin-inline: 2rem;
 }
+
+/* .middle-section-container {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+} */
 
 .middle-section-main {
   display: flex;
@@ -171,6 +176,7 @@ header {
   justify-content: space-between;
   background-color: var(--yellow-highlight);
   border-radius: 2rem;
+  margin-inline: 2rem;
 }
 
 .project-container {
@@ -189,8 +195,218 @@ header {
   color: var(--yellow-dark-shade);
 }
 
+/* .PROJECT-SECTION */
+.project-section {
+  display: grid;
+  margin-block-start: 8rem;
+  max-width: 75rem;
+  width: 100%;
+}
 
+.project-section-main {
+  display: grid; 
+  gap: 2rem;
+  margin-inline: 2rem;
+}
 
+.project-main-header p {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.project-sections-final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2.5rem;
+}
 
+.work-done-final-container {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  border: solid 0.031rem rgb(223, 222, 222);
+  border-radius: 2rem;
+}
+
+.work-done-final {
+  display: grid;
+  gap: 2rem;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.work-done-projects img {
+  max-width: 28.125rem;
+  width: 100%;
+}
+
+.project-header-body-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-header-main {
+  font-weight: bold;
+  font-family: Lora;
+  font-size: 2rem;
+  color: var(--header-text-colour);
+}
+
+.project-body-main {
+  font-family: Inter;
+  color: var(--body-text-colour);
+  line-height: 1.5rem;
+}
+
+/* .button-container {
+  display: grid;
+} */
+
+.read-more-button {
+  padding: 0.3rem 0.5rem;
+  border: solid 0.031rem var(--body-text-shade-one);
+  border-radius: 0.3rem;
+  background-color: transparent;
+  font-family: Inter;
+}
+
+/* SERVICE RENDERED */
+.services-renderd-section {
+  display: grid;
+  margin-block-start: 8rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.services-rendered {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* justify-content: space-between; */
+  align-items: start;
+  gap: 2rem;
+  margin-inline: 2rem;
+}
+
+.services-container,
+.services-container-black,
+.services-container-yellow {
+  display: grid;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  border-radius: 2rem;
+}
+
+.services-container-black {
+  background-color: rgb(30 30 30);
+}
+
+.services-container-yellow{
+  background-color: var(--yellow-highlight);
+}
+
+.service-image-container img {
+  max-width: 6rem;
+  width: 100%;
+}
+
+.service-text-container {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.ux-design-header,
+.web-dev-header,
+.product-strategy-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Lora;
+  color: var(--header-text-colour);
+}
+
+.ui-design-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: Lora;
+  color: white;
+}
+
+.ux-design-body,
+.web-dev-body,
+.product-strategy-body {
+  font-family: Inter;
+  color: var(--body-text-colour);
+}
+
+.ui-design-body {
+  font-family: Inter;
+  color: rgb(150, 148, 148);
+}
+
+/* ABOUT ME SECTION */
+.about-section {
+  display: grid;
+  margin-block-start: 8rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-inline: 2rem;
+  gap: 2rem;
+}
+
+.left-side-images {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.horizontal-image img {
+  max-width: 32rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.vertical-image-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 32rem;
+  width: 100%;
+}
+
+.vertical-image img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.about-text-container {
+  max-width: 40rem;
+  width: 100%;
+}
+
+.about-body-header {
+  color: var(--body-text-colour);
+  font-family: Inter;
+  font-size: 1.5rem;
+  margin-block-end: 1.5rem;
+}
+
+.about-header {
+  font-family: Lora;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--yellow-text-colour);
+  margin-block-end: 1rem;
+}
+
+.about-body-two {
+  font-family: Inter;
+  color: var(--body-text-shade-one);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-block-end: 1rem;
+}
 
