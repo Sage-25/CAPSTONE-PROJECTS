@@ -117,6 +117,19 @@ section {
   padding-inline-end: 3rem;
 }
 
+.sign-up-trigger-container {
+  text-align: end;
+  color: var(--text-colour-shade-one);
+}
+
+.sign-in-trigger {
+  color: var(--primary-colour);
+}
+
+.sign-in-trigger:hover {
+  cursor: pointer;
+}
+
 .direction-container {
   display: flex;
   align-items: center;
@@ -191,8 +204,7 @@ label {
   color: var(--text-colour-shade-two);
 }
 
-input,
-select {
+input{
   padding: 1rem;
   border-radius: 0.375rem;
   border: solid 0.031rem var(--text-colour-navigation);
@@ -207,8 +219,25 @@ select {
 
 .registraton-button-container {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
+}
+
+.divider-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  text-align: center;
+}
+
+.divider-main {
+  color: var(--text-colour-shade-one);
+}
+
+hr {
+  max-width: 10rem;
+  width: 100%;
+  border: solid 0.031rem rgba(245, 245, 245, 1);
 }
 
 .register-button {
@@ -226,19 +255,42 @@ select {
   transition: 0.5s;
 }
 
-.security-container {
+.google-logo {
+  margin-block-start: 0.2rem;
+}
+
+.google-logo-text {
+  color: var(--text-colour);
+}
+
+.google-button-container {
   display: grid;
-  justify-content: center;
-}
-
-.security-main {
-  display: flex;
+  grid-template-columns: auto auto;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 1rem 3rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08);
 }
 
-.security-text-container {
-  color: var(--text-colour-shade-one);
+.google-button-container:hover {
+  cursor: pointer;
+  border: solid 0.031rem rgba(21, 101, 216, 1);
+  background-color: rgba(245, 249, 255, 1);
+  transition: 0.5s;
+}
+
+.forgot-password-container {
+   text-align: end;
+   margin-block-start: 1.5rem;
+   color: var(--primary-colour);
+}
+
+.forgot-password:hover {
+  cursor: pointer;
+  color: rgb(55, 129, 232);
+  text-decoration: underline;
+  transition: 0.5s;
 }
 
 

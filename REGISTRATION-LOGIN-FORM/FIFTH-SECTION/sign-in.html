@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registraton Page</title>
-  <link rel="stylesheet" href="./form-field.css">
+  <title>Sign-up Page</title>
+  <link rel="stylesheet" href="./sign-in.css">
 </head>
 
 <body>
@@ -62,65 +62,38 @@
     </div>
 
     <div class="right-section">
-      <div class="top-navigation-container">
-        <a href="../FIRST-SECTION/index.html">
-          <div class="direction-container">
-            <div class="arrow-navigaiton">
-              <img src="https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760128471/oasis-registration-assets/arrow_back_ios_24px_tpo1qe.svg" alt="arrow indicating back">
-            </div>
-
-            <div class="back-text">
-              <p>Back</p>
-            </div>
-          </div>
-        </a>
-
-        <div class="steppers-container">
-          <p class="stepper-text">STEP 01/03</p>
-          <p class="personal-info-header">Personal Info</p>
+        <div class="sign-up-trigger-container">
+          <p>Don't have an account yet? <a href="../FIRST-SECTION/index.html"><span class="sign-in-trigger">Sign up</span></a></p>
         </div>
-      </div>
 
       <div class="input-field-container">
         <div class="register-text-container">
-          <p class="register-header-text">Register Individual Account!</p>
+          <p class="register-header-text">Get Started Today!</p>
           <p class="register-body-text">For the purpose of industry regulation, your details are required.</p>
         </div>
         
         <div class="form-field-container">
           <form>
             <div class="input-field-main">
-              <label for="user-fullname">Your fullname*</label>
-              <input type="text" placeholder="Enter your full name" id="user-fullname" name="user-full-name" >
+              <label for="enter-phone-number">Email address*</label>
+              <input type="email" placeholder="Enter your email address" id="enter-email-address" name="user-email-address" >
             </div>
 
             <br>
 
             <div class="input-field-main">
-              <label for="user-email-address">Email address*</label>
-              <input type="email" id="user-email" name="user-email-address" placeholder="Enter your email">
+              <label for="home-address">Password*</label>
+              <input type="password" id="user-password" name="user-password-security" placeholder="Enter your password">
             </div>
 
-            <br>
-
-            <div class="input-field-main">
-              <label>Create password*</label>
-              <input type="password" id="user-password" placeholder="Enter your password" name="user-password" >
-            </div>
-
-            <br>
-            
-            <div class="checkbox-container">
-              <input class="check-box" type="checkbox" id="terms-conditions" name="users-terms-conditions">
-              <label>I agree to terms & conditions</label>
+            <div class="forgot-password-container">
+              <p class="forgot-password">Forgot password?</p>
             </div>
           </form>
 
           <div class="registraton-button-container">
             <div class="registration-main-container">
-              <a href="../THIRD-SECTION/profile-completion.html">
-                <button class="register-button">Register Account</button>
-              </a>
+              <button class="register-button">Sign in</button>
             </div>
 
             <div class="divider-container">
@@ -135,7 +108,7 @@
               </div>
 
               <div class="google-logo-text">
-                <p>Register with Google</p>
+                <p>Sign in with Google</p>
               </div>
             </div>
           </div>

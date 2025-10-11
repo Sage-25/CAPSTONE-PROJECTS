@@ -243,6 +243,7 @@ hr {
   color: var(--background-colour-white);
   background-color: var(--primary-colour);
   border: none;
+  width: 100%;
 }
 
 .register-button:hover {
