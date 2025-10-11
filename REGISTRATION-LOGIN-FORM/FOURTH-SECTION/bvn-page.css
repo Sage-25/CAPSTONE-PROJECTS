@@ -151,13 +151,6 @@ section {
   color: var(--text-colour-shade-two);
 }
 
-.join-us-container {
-  display: grid;
-  justify-content: center;
-  gap: 2rem;
-  padding-inline: 5rem;
-}
-
 .register-text-container {
   display: grid;
   gap: 1rem;
@@ -191,8 +184,7 @@ label {
   color: var(--text-colour-shade-two);
 }
 
-input,
-select {
+input{
   padding: 1rem;
   border-radius: 0.375rem;
   border: solid 0.031rem var(--text-colour-navigation);
