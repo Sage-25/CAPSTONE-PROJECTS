@@ -28,8 +28,8 @@ main {
   justify-items: center;
 }
 
-/* HEADER SECTION */
-header {
+/* NAV SECTION */
+nav {
   display: grid;
   border-bottom: solid 0.031rem rgb(232, 231, 231);
 }
@@ -38,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   margin-inline: 5rem;
 }
 
@@ -61,6 +61,14 @@ header {
   color: var(--header-text-colour);
 }
 
+.header-project:hover,
+.header-about:hover,
+.contact:hover {
+  cursor: pointer;
+  color: var(--yellow-text-colour);
+  transition: 0.5s;
+}
+
 .more-icon-container {
   display: none;
   max-width: 1.5rem;
@@ -80,11 +88,6 @@ header {
   margin-block-start: 3rem;
   margin-inline: 1rem;
 }
-
-/* .location-final-container {
-  display: grid;
-  justify-content: center;
-} */
 
 .location-container {
   display: grid;
@@ -108,6 +111,7 @@ header {
   display: grid;
   justify-items: center;
   gap: 1.5rem;
+   margin-inline: 1rem;
 }
 
 .header-content-section {
@@ -187,6 +191,7 @@ header {
 .project-container {
   display: grid;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .project-header {
@@ -270,6 +275,13 @@ header {
   border-radius: 0.3rem;
   background-color: transparent;
   font-family: Inter;
+}
+
+.read-more-button:hover {
+  cursor: pointer;
+  background-color: var(--yellow-text-colour);
+  border: none;
+  transition: 0.5s;
 }
 
 /* SERVICE RENDERED */
@@ -398,7 +410,7 @@ header {
 .about-header {
   font-family: Lora;
   font-weight: bold;
-  font-size: clamp(3rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
   color: var(--yellow-text-colour);
   margin-block-end: 1rem;
 }
@@ -407,7 +419,7 @@ header {
   font-family: Inter;
   color: var(--body-text-shade-one);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   margin-block-end: 1.5rem;
 }
 
@@ -512,6 +524,15 @@ header {
   gap: 2rem;
 }
 
+.social-icons-container a {
+  color: var(--body-text-colour);
+}
+
+.social-icons-container a:hover {
+  color: var(--yellow-text-colour);
+  transition: 0.5s;
+}
+
 .social-icon svg {
   max-width: 1rem;
   width: 100%;
@@ -572,6 +593,42 @@ header {
 @media (max-width:460px) {
     .middle-section-main {
       flex-direction: column;
+  }
+
+  .middle-section {
+    margin-block-start: 4rem;
+  }
+
+  .header-section {
+    gap: 2.5rem;
+  }
+
+  .project-section {
+    margin-block-start: 4cap;
+  }
+
+  .work-done-final-container {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .services-renderd-section {
+    margin-block-start: 4rem;
+  }
+
+  .about-section {
+    margin-block-start: 4rem;
+  }
+
+  .client-feedback-section {
+    margin-block-start: 4rem;
+  }
+
+  .client-feedacks {
+    padding: 2rem 2rem;
+  }
+
+  .contact-section {
+    margin-block-start: 4rem;
   }
 }
 
