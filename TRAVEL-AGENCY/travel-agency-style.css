@@ -26,6 +26,24 @@
   margin-inline: 5rem;
 }
 
+.more-icon-container-top {
+  display: none;
+}
+
+.more-icon-container-top svg {
+  width: 1.5rem;
+  margin-block-start: 0.2rem;
+}
+
+.more-icon-container-bottom {
+  display: none;
+}
+
+.more-icon-container-bottom svg {
+  width: 1.5rem;
+  margin-block-start: 0.2rem;
+}
+
 .left-nav {
   display: flex;
   align-items: center;
@@ -47,6 +65,12 @@
   margin-block-start: 0.3rem;
 }
 
+.more-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-logo-container img {
   max-width: 6.25rem;
   width: 100%;
@@ -56,6 +80,16 @@
   display: flex;
   gap: 1rem;
 }
+
+.header-button-container {
+  display: grid;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+}
+
 
 .blog-button {
   padding: 1rem 2rem;
@@ -90,15 +124,22 @@ main {
 }
 
 .header-section-main {
-  display: grid;
   justify-items: center;
+  align-content: center;
+  background-image: url(https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760309494/travel-agency-assets/file-20241203-17-7g1a0h_ol2qfv.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
   /* max-width: 75rem;
   width: 100%; */
 }
 
-.header-image-main {
+/* .header-image-main {
   position: relative;
-}
+} */
 
 .header-image-container img {
   max-width: 100rem;
@@ -110,12 +151,12 @@ main {
 
 .header-text-section {
   display: grid;
-  position: absolute;
+  /* position: absolute; */
   top: 10rem;
   max-width: 80rem;
   width: 100%;
-  padding-inline: 2rem;
-  gap: 3rem;
+  padding: 2.5rem 1rem;
+  gap: 2rem;
 }
 
 .header-text-final-container {
@@ -265,6 +306,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .luxury-location-main {
@@ -276,7 +318,7 @@ main {
 
 .luxury-header p {
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 3vw, 2.5rem);
   color: var(--text-black-colour);
 }
 
@@ -433,7 +475,7 @@ hr {
 .adventure-header {
   color: var(--text-black-colour);
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   max-width: 30rem;
 }
 
@@ -468,6 +510,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  width: 100%;
 }
 
 .explore-content-section {
@@ -475,7 +518,6 @@ hr {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-
 }
 
 .explore-block-main {
@@ -513,7 +555,7 @@ hr {
   max-width: 35.18rem;
   width: 100%;
   height: 33.188rem;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 2rem;
 }
 
@@ -541,6 +583,7 @@ hr {
   display: grid;
   gap: 13rem;
   padding-inline: 1rem;
+  padding-block: 2rem;
 }
 
 .header-container-main {
@@ -548,11 +591,16 @@ hr {
 }
 
 .header-container {
-  font-weight: bold;
-  font-size: 4rem;
-  color: var(--background-white-colour);
+  display: grid;
+  gap: 1.5rem;
   text-align: center;
   max-width: 50rem;
+}
+
+.header-container p {
+  font-size: clamp(2.375rem, 6vw, 4rem);
+  font-weight: bold;
+  color: var(--background-white-colour);
 }
 
 .carousel-image-slide {
@@ -622,7 +670,7 @@ hr {
 
 .destination-main-header p {
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   text-align: center;
   color: var(--text-black-colour);
 }
@@ -665,7 +713,7 @@ hr {
 }
 
 .next-header-main {
-  font-size: 2.75rem;
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
   font-weight: bold;
   color: var(--background-white-colour);
 }
@@ -693,7 +741,7 @@ hr {
 .faq-header-main {
   color: var(--text-black-colour);
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 .faq-body-main {
@@ -761,12 +809,14 @@ hr {
   max-width: 85rem;
   width: 100%;
   padding-block: 5rem;
+  padding-inline: 1rem;
 }
 
 .blog-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .blog-information-content-container {
@@ -775,7 +825,7 @@ hr {
 }
 
 .blog-information-header {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: bold;
   color: var(--text-black-colour);
 }
@@ -826,6 +876,7 @@ hr {
   width: 100%;
   height: 25.333rem;
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 .blog-main-text-content,
@@ -967,4 +1018,198 @@ footer {
   width: 0.1rem;
   height: 1rem;
   background-color: var(--text-black-shade);
+}
+
+
+/* MEDIA QUARIES */
+@media (max-width:1021px) {
+  .navigation-container {
+    margin-inline: 0;
+  }
+
+  .more-icon-container-top {
+    display: block;
+  }
+
+  .left-nav {
+    display: none;
+  }
+
+  .location-list-main {
+    flex-direction: column;
+  }
+
+  .location-image-main img {
+    max-width: 100%;
+    width: 100%;
+    height: 16.313rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .explore-content-section {
+    flex-direction: column;
+  }
+
+  .explore-block-main {
+    max-width: none;
+  }
+
+  .paradise-island img {
+    max-width: none;
+  }
+
+  .destination-bottom-section {
+    flex-direction: column;
+  }
+
+  .next-destination-left {
+    order: 1;
+    max-width: none;
+    height: auto;
+  }
+
+  .next-destination-location {
+    width: 100%;
+  }
+
+  .header-button-container {
+    gap: 10rem;
+  }
+
+  .blog-trigger-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .blog-trigger-container {
+    flex-direction: column;
+  }
+
+  .find-destination-container {
+    height: fit-content;
+  }
+
+  footer {
+    margin-block-start: 3rem;
+  }
+}
+
+@media (max-width:840px) {
+  .header-text-section {
+    text-align: center;
+  }
+
+  .bottom-header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .explore-block-content {
+    grid-template-columns: none;
+  }
+
+  .carousel-image-slide-main {
+
+
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; */
+  }
+
+  .next-destination-location {
+    grid-template-columns: 1fr;
+  }
+
+  .main-footer-section {
+    flex-wrap: wrap;
+  }
+
+  .footer-trigger {
+    flex-wrap: wrap;
+  }
+
+  .footer-section-bottom {
+    flex-wrap: wrap;
+  }
+
+  .social-follow-container {
+    text-align: start;
+  }
+
+  .destination-main {
+    display: grid;
+    gap: 8rem;
+    padding-inline: 1rem;
+  }
+
+  .adventure-text-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .adventure-body {
+    max-width: 100%;
+  }
+
+  .luxury-location-main {
+    gap: 2rem;
+    margin-block: 3rem;
+  }
+
+  .adventure-section {
+    padding-block: 3rem;
+    gap: 2rem;
+  }
+
+  .next-destination-main {
+    gap: 2rem;
+  }
+
+  .faq-section {
+    padding-block: 3rem;
+  }
+
+  .faq-main {
+    gap: 2rem;
+  }
+
+  .blog-main {
+    padding-block: 3rem;
+  }
+
+  .main-footer {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width:560px) {
+  .right-container {
+    display: none;
+  }
+
+  .more-icon-container-bottom {
+    display: block;
+  }
+
+  .more-icon-container-top {
+    display: none;
+  }
+
+  .blog-header {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .luxury-header-main {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
 }

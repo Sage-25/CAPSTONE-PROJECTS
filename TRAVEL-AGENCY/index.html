@@ -6,6 +6,7 @@
   <title>Travel Agency Webpage</title>
   <link rel="stylesheet" href="./travel-agency-style.css">
 </head>
+
 <body>
   <section>
     <nav>
@@ -31,13 +32,27 @@
           </div>
         </div>
 
-        <div class="nav-logo-container">
-          <img src="https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760307673/travel-agency-assets/nomad-logo_jun5bd.webp" alt="nomad-logo">
+        <div class="more-logo-container">
+          <div class="more-icon-container-top">
+            <svg class="h-8 w-8 text-red-50"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </div>
+
+          <div class="nav-logo-container">
+            <img src="https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760307673/travel-agency-assets/nomad-logo_jun5bd.webp" alt="nomad-logo">
+          </div>
         </div>
 
         <div class="right-container">
           <button class="blog-button">Blog</button>
           <button class="contact-button">Contact</button>
+        </div>
+
+        <div class="more-icon-container-bottom">
+          <svg class="h-8 w-8 text-red-50"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
         </div>
       </div>
     </nav>
@@ -46,11 +61,11 @@
       <!-- HEADER SECTION -->
       <div class="header-section">
         <div class="header-section-main">
-          <div class="header-image-main">
+          <!-- <div class="header-image-main">
             <div class="header-image-container">
               <img src="https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760309494/travel-agency-assets/file-20241203-17-7g1a0h_ol2qfv.avif" alt="image of an island">
             </div>
-          </div>
+          </div> -->
 
           <div class="header-text-section">
             <div class="header-text-final-container">
@@ -491,7 +506,10 @@
           <div class="header-container-main">
             <div class="header-container">
               <p>Find Your Perfect Destination In Minutes</p>
-              <button class="contact-button">Book Now</button>
+
+              <div class="book-now-button-container">
+                <button class="contact-button">Book Now</button>
+              </div>
             </div>
           </div>
 
@@ -1114,7 +1132,7 @@
 
                 <div class="footer-trigger-main">
                   <div class="footer-trigger-header">
-                    <p>RESPURCE</p>
+                    <p>RESOURCE</p>
                   </div>
 
                   <div class="trigger-content-body">
