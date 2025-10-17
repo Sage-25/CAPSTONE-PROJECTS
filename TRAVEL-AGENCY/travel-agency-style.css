@@ -63,6 +63,7 @@
   border: solid 0.031rem var(--border-colour);
   border-radius: 0.5rem;
   color: var(--text-black-colour);
+  font-weight: bold;
 }
 
 .contact-button {
@@ -71,6 +72,7 @@
   border: none;
   border-radius: 0.5rem;
   color: var(--background-white-colour);
+  font-weight: bold;
 }
 
 /* MAIN BODY SECTION */
@@ -247,4 +249,722 @@ main {
 
 .mouse-icon {
   margin-block-start: 0.2rem;
+}
+
+/* FIND LUXURY APARTMENT SECTION */
+.luxury-location-section {
+  justify-items: center;
+}
+
+.lurury-second-section {
+  max-width: 85rem;
+  width: 100%;
+}
+
+.luxury-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.luxury-location-main {
+  display: grid;
+  gap: 3.5rem;
+  margin-block: 5rem;
+  padding-inline: 1rem;
+}
+
+.luxury-header p {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: var(--text-black-colour);
+}
+
+.location-list-main {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.location-list-container {
+  display: grid;
+  gap: 1rem;
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  /* height: 100%; */
+}
+
+.image-location-container {
+  position: relative;
+}
+
+.location-image-main img {
+  max-width: 25.5rem;
+  width: 100%;
+  height: 16.313rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.location-flag-container img {
+  max-width: 1.5rem;
+  width: 100%;
+  height: 1.5rem;
+  object-fit: fill;
+  border-radius: 30rem;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-white-colour);
+  border: solid 0.031rem var(--border-colour);
+  width: fit-content;
+  border-radius: 0.8rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.country-name {
+  color: var(--text-black-shade);
+  font-size: 0.875rem;
+}
+
+.text-header-body {
+  display: grid;
+  gap: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+.luxury-text-header {
+  font-weight: bold;
+  font-size: 1.688rem;
+  color: var(--text-black-colour);
+}
+
+.luxury-text-body {
+  color: var(--text-black-shade);
+  font-size: 0.875rem;
+}
+
+.rating-date-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-list-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-container svg {
+  max-width: 1.2rem;
+  width: 100%;
+  margin-block-start: 0.2rem;
+}
+
+.divider-section {
+  width: 0.1rem;
+  height: 1rem;
+  background-color: var(--border-colour);
+}
+
+.ratings-text p {
+  color: var(--text-black-shade);
+  font-size: 0.875rem;
+}
+
+hr {
+  border: solid 0.031rem var(--border-colour);
+}
+
+.pricing-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.pricing-amount {
+  font-weight: bold;
+  color: var(--text-black-colour);
+}
+
+.pricing-duration {
+  color: var(--text-black-shade);
+}
+
+/* ADVENTURE SECTION */
+.adventure-background {
+  background-color: var(--background-grey-colour);
+}
+
+.adventure-width-container {
+  justify-items: center;
+}
+
+.adventure-section {
+  display: grid;
+  gap: 3rem;
+  max-width: 85rem;
+  width: 100%;
+  padding-block: 7.5rem;
+  padding-inline: 1rem;
+}
+
+.adventure-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adventure-header {
+  color: var(--text-black-colour);
+  font-weight: bold;
+  font-size: 3.5rem;
+  max-width: 30rem;
+}
+
+.adventure-body {
+  color: var(--text-black-shade);
+  font-size: 1.125rem;
+  max-width: 19rem;
+  width: 100%;
+}
+
+.icon-number {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.main-icon-container {
+  padding: 1.3rem 1.5rem;
+  background-color: var(--background-grey-colour);
+  border-radius: 2.5rem;
+  border: solid 0.031rem var(--border-colour);
+}
+
+.main-icon svg {
+  color: var(--orange-colour);
+  margin-block-start: 0.2rem;
+  width: 1.5rem;
+}
+
+.explore-block-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.explore-content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.explore-block-main {
+  display: grid;
+  gap: 2rem;
+  padding: 1.25rem;
+  background-color: var(--background-white-colour);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 1.5rem;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.icon-number {
+  color: var(--text-black-colour);
+  font-size: 1.125rem;
+}
+
+.explore-main-header {
+  display: grid;
+  gap: 1rem;
+}
+
+.explore-main-header-copy {
+  color: var(--text-black-colour);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.explore-main-body-copy {
+  color: var(--text-black-shade);
+}
+
+.paradise-island img {
+  max-width: 35.18rem;
+  width: 100%;
+  height: 33.188rem;
+  object-fit: fill;
+  border-radius: 2rem;
+}
+
+/* FIND DESTINATION SECTION */
+.find-destination-container {
+  background-image: url(https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760634123/travel-agency-assets/highland-image_ynelbh.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.find-destination-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.destination-container {
+  max-width: 85rem;
+  width: 100%;
+}
+
+.destination-main {
+  display: grid;
+  gap: 13rem;
+  padding-inline: 1rem;
+}
+
+.header-container-main {
+  justify-items: center;
+}
+
+.header-container {
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--background-white-colour);
+  text-align: center;
+  max-width: 50rem;
+}
+
+.carousel-image-slide {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.carousel-image-slide-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+}
+
+.carousel-image-container img {
+  max-width: 25.416rem;
+  width: 100%;
+  border-radius: 2rem;
+  border: solid 0.031rem var(--border-colour);
+}
+
+.circle-indicator {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-indicator-dark {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--text-black-colour);
+  border-radius: 100%;
+}
+
+.circle-indicator-light {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgba(27, 25, 23, 0.333);
+  border-radius: 100%;
+}
+
+/* NEXT DESTINATION SECTION */
+.next-destination-container {
+  justify-items: center;
+  margin-block: 5rem;
+}
+
+.next-destination-main {
+  display: grid;
+  gap: 5rem;
+  max-width: 85rem;
+  width: 100%;
+  padding-inline: 1rem;
+}
+
+.destination-main-header-container {
+  display: grid;
+  justify-content: center;
+}
+
+.destination-main-header {
+  max-width: 50rem;
+  width: 100%;
+}
+
+.destination-main-header p {
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--text-black-colour);
+}
+
+.destination-bottom-section {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.next-destination-left {
+  background-image: url(https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760309494/travel-agency-assets/im11_zij4b5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 35.25rem;
+  width: 100%;
+  height: 61rem;
+  border-radius: 2rem;
+  align-content: center;
+}
+
+.next-destination-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.next-text-header {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-black-colour);
+}
+
+.header-button-container {
+  display: grid;
+  align-items: center;
+  gap: 30rem;
+  padding: 2rem 2rem;
+}
+
+.next-header-main {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: var(--background-white-colour);
+}
+
+/* FAQ SECTION */
+.faq-section {
+  justify-items: center;
+  padding-block: 5rem;
+}
+
+.faq-main {
+  display: grid;
+  max-width: 85rem;
+  width: 100%;
+  padding-inline: 1rem;
+  gap: 4rem;
+}
+
+.faq-head-body {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+
+.faq-header-main {
+  color: var(--text-black-colour);
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.faq-body-main {
+  color: var(--text-black-shade);
+  font-size: 1.125rem;
+}
+
+.faq-details-section-main {
+  border-top: solid 0.031rem var(--border-colour);
+  border-bottom: solid 0.031rem var(--border-colour);
+}
+
+.faq-details-main p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-black-colour);
+}
+
+.faq-details-body p {
+  color: var(--text-black-shade);
+  line-height: 1.5rem;
+}
+
+.faq-details-section-main {
+  display: grid;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+.faq-details-main-less {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+  border-bottom: solid 0.031rem var(--border-colour);
+}
+
+.faq-details-main-less p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-black-colour);
+}
+
+.faq-details-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visibility-icon svg {
+  width: 1.5rem;
+  margin-block-start: 0.2rem;
+  color: var(--text-black-colour);
+}
+
+/* BLOG SECTION */
+.blog-section {
+  justify-items: center;
+}
+
+.blog-main {
+  display: grid;
+  gap: 2rem;
+  max-width: 85rem;
+  width: 100%;
+  padding-block: 5rem;
+}
+
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-information-content-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.blog-information-header {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--text-black-colour);
+}
+
+.blog-information-body {
+  color: var(--text-black-shade);
+}
+
+.date-type-of-blog {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.calendar-icon-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog-icon svg {
+  width: 1.5rem;
+  margin-block-start: 0.2rem;
+  color: var(--orange-colour);
+}
+
+.blog-date p {
+  color: var(--text-black-colour);
+}
+
+.blog-trigger-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.blog-trigger-card {
+  display: grid;
+  gap: 1.5rem;
+  background-color: var(--background-white-colour);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 2rem;
+  padding-block-end: 2rem;
+}
+
+.blog-image-container img {
+  /* max-width: 25.333rem; */
+  width: 100%;
+  height: 25.333rem;
+  border-radius: 2rem;
+}
+
+.blog-main-text-content,
+.blog-content-section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.blog-content-section {
+  padding-inline: 1rem;
+}
+
+.blog-main-header {
+  color: var(--text-black-colour);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.blog-main-body {
+  color: var(--text-black-shade);
+}
+
+/* FOOTER */
+footer {
+  margin-block-start: 5rem;
+}
+
+.footer-main-section {
+  background-image: url(https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760699043/travel-agency-assets/footer-image_pummur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-items: center;
+  padding-inline: 1rem;
+}
+
+.footer-content {
+  display: grid;
+  gap: 2rem;
+}
+
+/* .footer-content {
+  max-width: 80rem;
+  width: 100%;
+  padding-inline: 1rem;
+} */
+
+.footer-bold-content {
+  font-weight: 900;
+  font-size: clamp(2rem, 25vw, 22rem);
+  color: rgba(255, 255, 255, 0.562);
+}
+
+.main-footer {
+  display: grid;
+  gap: 4rem;
+  background-color: var(--text-black-colour);
+  padding: 2.5rem;
+  border-radius: 2rem;
+}
+
+.main-footer-section {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-trigger {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-trigger-main {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer-trigger-header p,
+.social-follow p {
+  color: var(--text-black-shade);
+}
+
+.trigger-content-body {
+  color: var(--background-white-colour);
+}
+
+.trigger-content-body {
+  display: grid;
+  gap: 1rem;
+}
+
+.social-follow-container {
+  display: grid;
+  gap: 1.5rem;
+  text-align: end;
+}
+
+.social-media-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-icons-circle {
+  padding: 0.5rem 0.7rem;
+  border: solid 0.051rem var(--background-white-colour);
+  border-radius: 100%;
+}
+
+.social-icons svg {
+  width: 1.5rem;
+  margin-block-start: 0.2rem;
+  color: var(--background-white-colour);
+}
+
+.footer-section-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-botom-section,
+.privacy-trigger,
+.terms-trigger {
+  color: var(--background-white-colour);
+}
+
+.privacy-conditions-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.horizontal-divider {
+  width: 0.1rem;
+  height: 1rem;
+  background-color: var(--text-black-shade);
 }
