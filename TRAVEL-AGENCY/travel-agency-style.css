@@ -61,6 +61,14 @@
   gap: 0.5rem;
 }
 
+.page-nav-container:hover,
+.package-nav-container:hover,
+.destination-nav-container:hover {
+  cursor: pointer;
+  color: var(--orange-colour);
+  transition: 0.5s;
+}
+
 .arrow-cown-container {
   margin-block-start: 0.3rem;
 }
@@ -99,6 +107,13 @@
   font-weight: bold;
 }
 
+.blog-button:hover {
+  cursor: pointer;
+  background-color: var(--orange-colour);
+  color: var(--background-white-colour);
+  transition: 0.5s;
+}
+
 .contact-button {
   padding: 1rem 2rem;
   background-color: var(--orange-colour);
@@ -106,6 +121,12 @@
   border-radius: 0.5rem;
   color: var(--background-white-colour);
   font-weight: bold;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+  background-color: rgb(250, 147, 87);
+  transition: 0.5s;
 }
 
 /* MAIN BODY SECTION */
@@ -945,6 +966,12 @@ footer {
   gap: 1rem;
 }
 
+.trigger-content-body p:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  color: var(--orange-colour);
+}
+
 .social-follow-container {
   display: grid;
   gap: 1.5rem;
@@ -980,6 +1007,13 @@ footer {
 .privacy-trigger,
 .terms-trigger {
   color: var(--background-white-colour);
+}
+
+.privacy-trigger:hover,
+.terms-trigger:hover {
+  cursor: pointer;
+  color: var(--orange-colour);
+  transition: 0.5s;
 }
 
 .privacy-conditions-container {
