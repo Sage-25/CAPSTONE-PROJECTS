@@ -569,7 +569,7 @@ hr {
   background-image: url(https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760634123/travel-agency-assets/highland-image_ynelbh.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .find-destination-container {
@@ -909,7 +909,7 @@ footer {
   background-image: url(https://res.cloudinary.com/dgx8jcnmq/image/upload/v1760699043/travel-agency-assets/footer-image_pummur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   justify-items: center;
   padding-inline: 1rem;
 }
@@ -917,6 +917,7 @@ footer {
 .footer-content {
   display: grid;
   gap: 2rem;
+  padding-block-end: 1rem;
 }
 
 .footer-bold-content {
