@@ -142,13 +142,10 @@ body {
 }
 
 /* DOCTOR DETAILS SECTION */
-/* .doctor-details-container {
-  padding: 3rem 2.5rem;
-} */
-
 .service-details-container {
   display: grid;
   gap: 2rem;
+  padding-block: 2rem;
 }
 
 .service-details-first-section {
@@ -503,6 +500,84 @@ hr {
 }
 
 /* INFORMATION SECTION */
+.information-section {
+  display: flex;
+  gap: 1.25rem;
+  padding-inline: 1.5rem;
+}
 
+.nutrition-section {
+  padding: 4.75rem 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--blue-shade);
+  border: solid 0.031rem var(--blue-shade-border);
+  width: 100%;
+}
 
+.nutrition-details {
+  display: grid;
+  gap: 1.5rem;
+}
 
+.nutrition-header-container {
+  display: grid;
+  gap: 0.625rem;
+}
+
+.nutrition-header {
+  color: var(--text-shade);
+}
+
+.nutrition-iocon-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nutrition-iocon-name img {
+  padding: 0.7rem 0.7rem;
+  height: fit-content;
+  background-color: var(--blue-shade-one);
+  border-radius: 2.563rem;
+  border: solid 0.031rem var(--blue-shade-border-one);
+  width: fit-content;
+}
+
+.nutrition-of-the-day-text {
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: var(--secondary-blue);
+}
+
+.nutrition-body {
+  color: var(--text-shade-two);
+}
+
+.level-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.circle-active {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--secondary-blue);
+  border-radius: 10rem;
+}
+
+.circle-inactive {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--blue-shade);
+  border-radius: 10rem;
+}
+
+.child-information {
+  color: var(--secondary-blue);
+}
+
+.trigger-text-button {
+  text-align: end;
+  color: var(--secondary-blue);
+}
