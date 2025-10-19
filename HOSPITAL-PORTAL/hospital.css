@@ -146,9 +146,16 @@ body {
   padding: 3rem 2.5rem;
 } */
 
-.service-detais-first-section {
+.service-details-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.service-details-first-section {
   display: grid;
   gap: 1.5rem;
+  padding-inline: 1.25rem;
+  /* padding: 1.5rem 1.25rem; */
 }
 
 .services-text {
@@ -156,9 +163,25 @@ body {
   font-size: 0.75rem;
 }
 
-.doctor-appointment-container {
+.doctor-image-main {
   display: grid;
   gap: 1rem;
+  padding: 1.25rem;
+}
+
+.doctor-appointment-container {
+  background-color: var(--white-colour);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 0.938rem;
+  width: 100%;
+  height: 100%;
+}
+
+.service-details-flex {
+  display: flex;
+  align-items: start;
+  gap: 0.625rem;
+  /* height: max-content; */
 }
 
 .doctor-image-container {
@@ -191,19 +214,36 @@ body {
   font-size: 0.75rem;
 }
 
+.horizontal-line {
+  height: none;
+}
+
 hr {
   border: solid 0.031rem var(--border-colour);
 }
 
 .appointment-date {
   display: grid;
-  gap: 0.625rem;
+  gap: 1rem;
+  /* gap: 0.938rem 0.625rem; */
+}
+
+.second-header {
+  color: var(--text-shade);
 }
 
 .test-details-date-container {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0.625rem;
+  background-color: var(--green-shade);
+  border: solid 0.031rem var(--border-light-green);
+  border-radius: 0.625rem;
+}
+
+.test-details-date {
+  color: var(--text-black);
 }
 
 .vertical-line {
@@ -212,8 +252,257 @@ hr {
   background-color: var(--border-light-green);
 }
 
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
+.icon-container {
+  padding: 0.5rem 0.7rem;
+  height: fit-content;
+  background-color: var(--primary-green);
+  border-radius: 2.563rem;
+  border: solid 0.031rem var(--border-dark-green);
+  width: fit-content;
+}
 
+.icon-container img { 
+  margin-block-start: 0.2rem;
+}
+
+.doctor-details-header-container {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.doctors-detail-header {
+  font-weight: 600;
+  color: var(--text-black);
+}
+
+.doctor-details-price {
+  font-weight: 600;
+  color: var(--secondary-blue);
+}
+
+.delivery-main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.second-delivery-main {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.appointment-date {
+  display: grid;
+}
+
+.delivery-main-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.delivery-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.delivery-tag {
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 10rem;
+  background-color: var(--blue-shade);
+  color: var(--secondary-blue);
+  width: fit-content;
+}
+
+.view-order-button {
+  color: var(--secondary-blue);
+}
+
+.doctor-details-body {
+  color: var(--text-shade);
+}
+
+.testing-center {
+  color: var(--secondary-blue);
+}
+
+.icon-text-container-top {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.doctor-details-header-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.hospital-header {
+  font-weight: 600;
+  color: var(--text-black);
+}
+
+.hospital-body {
+  color: var(--text-shade-two);
+}
+
+.view-hospital-button {
+  text-align: end;
+  color: var(--secondary-blue);
+}
+
+/* QUICK TEST */
+.quick-test-container {
+  padding-inline: 1.5rem;
+}
+
+.quick-test-main {
+  display: grid;
+  gap: 1rem;
+  padding: 2.5rem;
+  background-color: var(--white-colour);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 1rem;
+}
+
+.header-text-direction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view-all {
+  color: var(--secondary-blue);
+}
+
+.quick-test-triggers {
+  display: flex;
+  gap: 1rem;
+}
+
+.general-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--orange-shade);
+  border: solid 0.031rem var(--orange-shade-one);
+  border-radius: 0.938rem;
+}
+
+.quick-test-text {
+  color: var(--text-black);
+  font-size: 0.625rem;
+}
+
+.xray-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--green-shade);
+  border: solid 0.031rem var(--border-light-green);
+  border-radius: 0.938rem;
+}
+
+.blood-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--blue-shade);
+  border: solid 0.031rem var(--blue-shade-border);
+  border-radius: 0.938rem;
+}
+
+.blood-count-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--yellow-shade);
+  border: solid 0.031rem var(--yellow-shade-one);
+  border-radius: 0.938rem;
+}
+
+.malaria-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--green-shade);
+  border: solid 0.031rem var(--border-light-green);
+  border-radius: 0.938rem;
+}
+
+.genetic-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--blue-shade);
+  border: solid 0.031rem var(--blue-shade-border);
+  border-radius: 0.938rem;
+}
+
+.prenatal-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--orange-shade);
+  border: solid 0.031rem var(--orange-shade-one);
+  border-radius: 0.938rem;
+}
+
+.urinalysis-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--yellow-shade);
+  border: solid 0.031rem var(--yellow-shade-one);
+  border-radius: 0.938rem;
+}
+
+.thyroid-test-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1.875rem 0.938rem;
+  background-color: var(--green-shade);
+  border: solid 0.031rem var(--border-light-green);
+  border-radius: 0.938rem;
+}
+
+/* INFORMATION SECTION */
 
 
 
