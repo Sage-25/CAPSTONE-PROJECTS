@@ -5,3 +5,215 @@
   padding: 0;
   font-family: Syne, Serif;
 }
+
+:root {
+  --primary-green: rgba(13, 120, 101, 1);
+  --green-shade: rgba(235, 249, 247, 1);
+  --text-black: rgba(13, 15, 20, 1);
+  --text-shade: rgba(153, 156, 162, 1);
+  --text-shade-two: rgba(100, 103, 110, 1);
+  --background-colour: rgba(246, 253, 252, 1);
+  --white-colour: rgba(255, 255, 255, 1);
+  --border-colour: rgba(231, 239, 238, 1);
+  --border-light-green: rgba(198, 247, 238, 1);
+  --border-dark-green: rgba(31, 190, 162, 1);
+  --secondary-blue: rgba(13, 86, 120, 1);
+  --blue-shade: rgba(222, 240, 248, 1);
+  --blue-shade-one: rgba(126, 202, 236, 1);
+  --blue-shade-border: rgba(173, 221, 243, 1);
+  --blue-shade-border-one: rgba(73, 160, 200, 1);
+  --orange-shade: rgba(249, 240, 237, 1);
+  --orange-shade-one: rgba(246, 196, 181, 1);
+  --yellow-shade: rgba(250, 247, 239, 1);
+  --yellow-shade-one: rgba(248, 236, 205, 1);
+}
+
+body {
+  background-color: var(--background-colour);
+}
+
+/* NAVIGATION SECTION */
+.navigation-container {
+  display: grid;
+  /* gap: 0.5rem; */
+}
+
+.logo-container {
+  padding-block: 0.6rem;
+  padding-inline-start: 1.875rem;
+  padding-inline-end: 6rem;
+  /* padding: 0.6rem 1.875rem; */
+}
+
+.side-bar-main {
+  height: 100vh;
+  background-color: var(--white-colour);
+  width: fit-content;
+  position: fixed;
+  border-right: solid 0.031rem var(--border-colour);
+}
+
+.side-bar-details-container {
+  display: grid;
+  gap: 1.875rem;
+}
+
+.navigation-trigger:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding-block: 1rem;
+  padding-inline-start: 1.875rem;
+  padding-inline-end: 6rem;
+  background-color: var(--green-shade);
+  color: var(--primary-green);
+}
+
+.navigation-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding-block: 1rem;
+  padding-inline-start: 1.875rem;
+  padding-inline-end: 6rem;
+  color: var(--text-shade);
+}
+
+/* HEADER SECTION NAV */
+.left-side-container {
+  margin-inline-start: 15.69rem;
+}
+
+.header-section-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.938rem;
+  padding-inline-start: 1.25rem;
+  padding-inline-end: 3.125rem;
+  background-color: var(--white-colour);
+  border-bottom: solid 0.031rem var(--border-colour);
+}
+
+.amount-top-up-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--green-shade);
+  border: solid 0.031rem var(--border-light-green);
+  border-radius: 0.625rem;
+}
+
+.amount {
+  font-weight: 800;
+  color: var(--primary-green);
+}
+
+.top-up-trigger {
+  color: var(--primary-green);
+}
+
+.profile-notification-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.notification-bell-icon {
+  padding: 0.5rem 0.7rem;
+  background-color: var(--white-colour);
+  border-radius: 0.625rem;
+  border: solid 0.031rem var(--border-colour);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-image-container img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 0.625rem;
+  border: solid 0.031rem var(--border-colour);
+}
+
+/* DOCTOR DETAILS SECTION */
+/* .doctor-details-container {
+  padding: 3rem 2.5rem;
+} */
+
+.service-detais-first-section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.services-text {
+  color: var(--text-shade);
+  font-size: 0.75rem;
+}
+
+.doctor-appointment-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.doctor-image-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.doctor-image-container img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 0.031rem var(--border-colour);
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+.doctors-name-container {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.doctors-name {
+  font-weight: bold;
+  font-size: 600;
+  color: var(--text-black);
+}
+
+.doctors-body {
+  color: var(--text-shade);
+  font-size: 0.75rem;
+}
+
+hr {
+  border: solid 0.031rem var(--border-colour);
+}
+
+.appointment-date {
+  display: grid;
+  gap: 0.625rem;
+}
+
+.test-details-date-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vertical-line {
+  width: 0.031rem;
+  height: 0.9rem;
+  background-color: var(--border-light-green);
+}
+
+
+
+
+
+
