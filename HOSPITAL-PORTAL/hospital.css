@@ -84,6 +84,14 @@ body {
   margin-inline-start: 15.69rem;
 }
 
+.main-header-nav {
+  display: grid;
+  position: sticky;
+  top: 0;
+  /* width: 82.5%; */
+  z-index: 1;
+}
+
 .header-section-nav {
   display: flex;
   align-items: center;
