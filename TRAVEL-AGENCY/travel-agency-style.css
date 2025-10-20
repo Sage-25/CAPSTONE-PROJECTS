@@ -587,7 +587,7 @@ hr {
   display: grid;
   gap: 13rem;
   padding-inline: 1rem;
-  padding-block: 2rem;
+  padding-block: 5rem;
 }
 
 .header-container-main {
