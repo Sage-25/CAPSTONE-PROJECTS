@@ -92,7 +92,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: var(--secondary-white);
-  padding: 0.875rem 2.5rem 0.875rem 1.25rem;
+  padding: 0.875rem 1.875rem 0.875rem 1.25rem;
   border: solid 0.031rem var(--border-colour);
   box-shadow: 0 1rem 40rem 0.5rem rgba(0, 0, 0, 0.03);
 }
@@ -130,6 +130,7 @@ body {
 .ticket-section-container {
   display: grid;
   gap: 1.688rem;
+  padding: 1.5rem 1.875rem 0.875rem 1.25rem;
 }
 
 .tickets-header {
@@ -140,13 +141,18 @@ body {
 
 .tickets-bottom-container {
   display: grid;
-  gap: 2.875rem;
+  gap: 2rem;
+  padding: 1.25rem 1.75rem;
+  background-color: var(--secondary-white);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 1rem;
 }
 
 .search-filter-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .search-container {
@@ -162,6 +168,7 @@ input {
   background-color: var(--background-colour);
   width: 100%;
   outline: none;
+  background-color: transparent;
 }
 
 input::placeholder {
@@ -196,6 +203,12 @@ input::placeholder {
   color: var(--secondary-white);
 }
 
+.task-button:hover {
+  cursor: pointer;
+  background-color: rgb(170, 138, 237);
+  transition: 0.5s;
+}
+
 .tab-container {
   display: flex;
   align-items: center;
@@ -217,9 +230,18 @@ input::placeholder {
 }
 
 /* CARD CONTAINER */
+.ticket-tracker-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .ticket-main-container {
   display: grid;
-  gap: 0.5rem;
+  gap: 1.188rem;
+  padding: 1.5rem 1.25rem;
+  border: solid 0.031rem var(--border-colour);
+  background-color: var(--secondary-white);
+  border-radius: 1rem;
 }
 
 .tic-header-main {
@@ -235,6 +257,11 @@ input::placeholder {
   gap: 0.8rem;
 }
 
+.tick-body-content {
+  display: grid;
+  gap: 0.5rem;
+}
+
 .circle-wine {
   width: 1rem;
   height: 1rem;
@@ -242,8 +269,65 @@ input::placeholder {
   border-radius: 1rem;
 }
 
+.circle-blue {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--secondary-blue);
+  border-radius: 1rem;
+}
 
+.circle-green {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--secondary-green);
+  border-radius: 1rem;
+}
 
+.tic-header {
+  color: var(--text-colour);
+  font-weight: bold;
+}
+
+.date-posted {
+  color: var(--text-colour-shade);
+}
+
+.tick-body-one {
+  color: var(--text-colour);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.tick-body-two {
+  color: var(--text-colour-shade);
+  font-size: 0.875rem;
+}
+
+.tick-profile-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-details p {
+  color: var(--text-colour-shade);
+}
+
+.anchor-tag {
+  color: var(--primary-colour);
+  text-decoration: underline;
+}
+
+.anchor-tag:hover {
+  cursor: pointer;
+  color: rgb(156, 122, 229);;
+}
 
 .profile-details img {
   width: 1.75rem;
@@ -252,4 +336,73 @@ input::placeholder {
   border-radius: 2rem;
 }
 
+.tick-tag {
+  font-size: 0.75rem;
+  color: var(--secondary-red);
+  padding: 0.5rem 0.8rem;
+  background-color: var(--red-shade);
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+hr {
+  border: solid 0.031rem var(--border-colour);
+}
+
+.pagination-container {
+  display: grid;
+  justify-content: end;
+}
+
+.pagination-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.number-pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.number-pagination {
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-colour);
+  color: var(--secondary-white);
+  border-radius: 0.2rem;
+  width: 100%;
+}
+
+.number-pagination-two {
+  padding: 0.6rem 1rem;
+  color: var(--text-colour);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 0.2rem;
+  width: 100%;
+}
+
+.previous-text,
+.next-text {
+  color: var(--text-colour);
+}
+
+.number-pagination:hover {
+  cursor: pointer;
+  background-color: rgb(170, 138, 237);
+  transition: 0.5s;
+}
+
+.number-pagination-two:hover {
+  cursor: pointer;
+  background-color: var(--background-colour);
+  transition: 0.5s;
+}
+
+.previous-text:hover,
+.next-text:hover {
+  cursor: pointer;
+  color: var(--primary-colour);
+  transition: 0.5s;
+}
 
