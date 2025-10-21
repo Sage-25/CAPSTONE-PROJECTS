@@ -589,3 +589,21 @@ hr {
   text-align: end;
   color: var(--secondary-blue);
 }
+
+@media (max-width:1225px) {
+  .service-details-flex {
+    flex-wrap: wrap;
+  }
+
+  .quick-test-triggers {
+    flex-wrap: wrap;
+  }
+
+  .information-section {
+    flex-wrap: wrap;
+  }
+
+  .doctor-appointment-container {
+    height: fit-content;
+  }
+}
