@@ -28,8 +28,15 @@ body {
 }
 
 /* FIRST SIDE NAVIGATION */
+main {
+  display: flex;
+}
+
 .first-side-nav-container {
   display: flex;
+  height: 100vh;
+  position: fixed;
+  left: 0;
 }
 
 .first-side-nav-main {
@@ -73,6 +80,7 @@ body {
   width: 16rem;
   height: 100vh;
   border: solid 0.031rem var(--border-colour);
+  overflow: scroll;
 }
 
 .logo-icon-container {
@@ -194,4 +202,184 @@ body {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+
+/* RIGHT SIDE CONTAINER */
+.right-side-item-container {
+  padding-inline-start: 23.1rem;
+  width: 100%;
+}
+
+.home-bread-crumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-colour);
+}
+
+.home-breadcrumb {
+  color: var(--text-shade-colour);
+}
+
+.right-side-item-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-white);
+  border-bottom: solid 0.031rem var(--border-colour);
+}
+
+.search-notificaton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-container {
+  display: flex;
+  stroke-linecap: var(--primary-colour-shade);
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 0.5rem;
+}
+
+input {
+  border: solid 0;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: var(--text-shade-colour);
+}
+
+.notif-switch-icon-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-calendar-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.page-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--text-colour);
+}
+
+.filter-date-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-colour);
+  padding: 0.8rem;
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 0.5rem;
+  background-color: var(--secondary-white);
+}
+
+.card-analytics-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.container-stats {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: var(--secondary-white);
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem var(--nav-shade);
+}
+
+.number-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.total-invoice-icon-purple {
+  background-color: var(--primary-colour);
+  padding: 0.7rem 0.8rem;
+  border-radius: 2rem ;
+}
+
+.total-invoice-icon-green {
+  background-color: var(--secondary-green);
+  padding: 0.6rem 0.8rem;
+  border-radius: 2rem ;
+}
+
+.total-invoice-icon-yellow {
+  background-color: var(--secondary-yellow);
+  padding: 0.6rem 0.8rem;
+  border-radius: 2rem ;
+}
+
+.total-invoice-icon-red {
+  background-color: var(--secondary-red);
+  padding: 0.6rem 0.8rem;
+  border-radius: 2rem ;
+}
+
+.total-invoice-icon img {
+  margin-block-start: 0.2rem;
+}
+
+.number-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.number-container p:first-child {
+  color: var(--text-shade-colour);
+  font-size: 0.875rem;
+}
+
+.number-container p:last-child {
+  color: var(--text-colour);
+  font-weight: bold;
+}
+
+.price-trajectory-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.price-percentage {
+  color: var(--secondary-green);
+}
+
+.month-indicator {
+  color: var(--text-shade-colour);
+}
+
+.card-pattern {
+  position: absolute;
+  bottom: -0.3rem;
+  left: -0.031rem;
 }
