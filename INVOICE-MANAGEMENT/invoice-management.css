@@ -587,6 +587,12 @@ hr {
   color: var(--text-colour);
 }
 
+.view-all-trigger {
+  display: grid;
+  justify-content: center;
+  color: var(--text-colour);
+}
+
 /* RECENT TRANSACTION */
 .recent-transaction-container {
   display: grid;
@@ -661,4 +667,100 @@ hr {
   border: solid 0.031rem var(--red-shade-outline);
   border-radius: 0.5rem;
   color: var(--secondary-red);
+}
+
+/* TABLE SECTION */
+.invoice-table-container {
+  display: grid;
+  gap: 1rem;
+  background-color: var(--secondary-white);
+  border: solid 0.031rem var(--border-colour);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.invoice-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invoice-table-header p:first-child {
+  font-weight: bold;
+  color: var(--text-colour);
+  font-size: 1.125rem;
+}
+
+.invoice-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-colour);
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--secondary-white);
+}
+
+.table-details-image {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-details-image img {
+  width: 1.5rem;
+}
+
+.invoice-table-main {
+  display: flex;
+  align-items: start;
+}
+
+.table-section-main {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.table-header-image {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--nav-shade);
+  color: var(--text-colour);
+  font-weight: 500;
+  padding: 0.563rem 1rem;
+  font-size: 0.75rem;
+  border-bottom: solid 0.031rem var(--border-colour);
+}
+
+.table-header {
+  background-color: var(--nav-shade);
+  color: var(--text-colour);
+  font-weight: 500;
+  padding: 0.563rem 1rem;
+  font-size: 0.75rem;
+  border-bottom: solid 0.031rem var(--border-colour);
+}
+
+.table-details-grey {
+  background-color: var(--secondary-white);
+  padding: 0.563rem 1rem;
+  font-size: 0.75rem;
+  color: var(--text-shade-colour);
+  border-bottom: solid 0.031rem var(--border-colour)
+}
+
+.table-details-dark {
+  background-color: var(--secondary-white);
+  padding: 0.563rem 1rem;
+  font-size: 0.75rem;
+  color: var(--text-colour);
+  border-bottom: solid 0.031rem var(--border-colour)
+}
+
+.table-details-image {
+  background-color: var(--secondary-white);
+  padding: 0.563rem 1rem;
+  font-size: 0.75rem;
+  color: var(--text-colour);
+  border-bottom: solid 0.031rem var(--border-colour)
 }
