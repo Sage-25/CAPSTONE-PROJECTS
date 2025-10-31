@@ -710,7 +710,8 @@ hr {
 }
 
 .table-details-image img {
-  width: 1.5rem;
+  max-width: 1.5rem;
+  width: 100%;
 }
 
 .invoice-table-main {
