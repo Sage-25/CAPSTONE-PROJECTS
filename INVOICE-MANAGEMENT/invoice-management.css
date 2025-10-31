@@ -274,6 +274,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+  margin-inline: 1.5rem;
 }
 
 .page-name {
@@ -299,6 +300,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  margin-inline: 1.5rem;
 }
 
 .container-stats {
@@ -390,6 +392,7 @@ input::placeholder {
   align-items: top;
   justify-content: space-between;
   gap: 1rem;
+  margin-inline: 1.5rem;
 }
 
 .invoice-details-container {
@@ -677,6 +680,7 @@ hr {
   border: solid 0.031rem var(--border-colour);
   padding: 1rem;
   border-radius: 0.5rem;
+  margin-inline: 1.5rem;
 }
 
 .invoice-table-header {
@@ -712,11 +716,13 @@ hr {
 .invoice-table-main {
   display: flex;
   align-items: start;
+  border: solid 0.031rem var(--border-colour);
+  border-radius: 0.5rem;
 }
 
 .table-section-main {
   display: grid;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
   width: 100%;
 }
 
@@ -730,6 +736,8 @@ hr {
   padding: 0.563rem 1rem;
   font-size: 0.75rem;
   border-bottom: solid 0.031rem var(--border-colour);
+  overflow: hidden;
+  border-top-right-radius: 0.5rem;
 }
 
 .table-header {
@@ -739,28 +747,29 @@ hr {
   padding: 0.563rem 1rem;
   font-size: 0.75rem;
   border-bottom: solid 0.031rem var(--border-colour);
+  border-top-left-radius: 0.5rem;
 }
 
 .table-details-grey {
   background-color: var(--secondary-white);
-  padding: 0.563rem 1rem;
-  font-size: 0.75rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.875rem;
   color: var(--text-shade-colour);
-  border-bottom: solid 0.031rem var(--border-colour)
+  border-bottom: solid 0.031rem var(--border-colour);
 }
 
 .table-details-dark {
   background-color: var(--secondary-white);
-  padding: 0.563rem 1rem;
-  font-size: 0.75rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.875rem;
   color: var(--text-colour);
   border-bottom: solid 0.031rem var(--border-colour)
 }
 
 .table-details-image {
   background-color: var(--secondary-white);
-  padding: 0.563rem 1rem;
-  font-size: 0.75rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
   color: var(--text-colour);
   border-bottom: solid 0.031rem var(--border-colour)
 }
